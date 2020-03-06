@@ -1,5 +1,5 @@
 {
-  "name": "fabelio-web-scraping",
+  "name": "fabelio-web-scraping-nodejs",
   "version": "1.0.0",
   "description": "Get data from fabelio sites",
   "main": "index.js",

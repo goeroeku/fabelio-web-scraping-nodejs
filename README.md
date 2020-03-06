@@ -1,6 +1,6 @@
 # Fabelio Web Scraping Frontend using NodeJS
 
-This is the BackEnd (API) for scraping konten from Ecomerse Fabelio which is part of the project FrontEnd Version (FE/VueJS) with the address : [@goeroeku](http://github.com/goeroeku)
+This is the BackEnd (API) for scraping konten from Ecomerse Fabelio which is part of the project FrontEnd Version (FE/VueJS) with the address : [@goeroeku](https://github.com/goeroeku/fabelio-web-scraping-vuejs)
 
 ## Project setup
 
