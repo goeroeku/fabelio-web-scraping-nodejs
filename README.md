@@ -1,4 +1,4 @@
-# Fabelio Web Scraping Frontend using NodeJS
+# Fabelio Web Scraping Frontend using NodeJS <img src="https://travis-ci.org/goeroeku/fabelio-web-scraping-nodejs.svg?branch=master" alt="build:started">
 
 This is the BackEnd (API) for scraping konten from Ecomerse Fabelio which is part of the project FrontEnd Version (FE/VueJS) with the address : [@goeroeku](https://github.com/goeroeku/fabelio-web-scraping-vuejs)
 
@@ -33,7 +33,7 @@ yarn run server
 
 ### Testing
 
-Before you do the testing process, make sure to run the migration command to initialize the database first
+Before you do the testing process, make sure to run the server and the migration command to initialize the database first
 
 ```sh
 
