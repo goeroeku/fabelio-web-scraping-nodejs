@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "cafd8533-6d1b-4122-aab8-21ff747f3f17",
+		"name": "Fabelio Scraping Web",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products/2bc8d914-d2de-42d8-b126-3367e1cb4514",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"2bc8d914-d2de-42d8-b126-3367e1cb4514"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "grab",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "url",
+									"value": "https://fabelio.com/ip/ip/lenox-poly-sideboard-kit.html",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "url",
+									"value": "https://fabelio.com/ip/sofa-3-dudukan-rian-brown.html",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "url",
+									"value": "https://fabelio.com/ip/ip/kursi-cessi-upholstered.html",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/products/grab",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"grab"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "link",
+									"value": "https://fabelio.com/ip/sofa-3-dudukan-rian-brown.html",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Sofa 3 Dudukan Rian (Brown)",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "3609050",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Sofa dengan desain minimalis memang selalu bisa fit dimana saja. Sama seperti aku, sofa 3 dudukan Rian yang terbuat dari kerangka kayu dan dilapisi busa berkualitas terbaik. Keseluruhan gayaku adalah gaya minimalis, yang membuatku bisa cocok diletakkan di segala jenis tema ruangan.",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"value": "{}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/products",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Sofa 3 Dudukan Rian (Brown)",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Sofa dengan desain minimalis memang selalu bisa fit dimana saja. Sama seperti aku, sofa 3 dudukan Rian yang terbuat dari kerangka kayu dan dilapisi busa berkualitas terbaik. Keseluruhan gayaku adalah gaya minimalis, yang membuatku bisa cocok diletakkan di segala jenis tema ruangan.",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"value": "[]",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/products/5c44c516-72fd-4388-ac15-2170ed70d32a",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"5c44c516-72fd-4388-ac15-2170ed70d32a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products/5c44c516-72fd-4388-ac15-2170ed70d32a",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"5c44c516-72fd-4388-ac15-2170ed70d32a"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
