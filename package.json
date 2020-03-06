@@ -42,7 +42,7 @@
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-react": "^7.18.3",
     "kill-port": "^1.6.0",
-    "knex": "^0.20.10",
+    "knex": "^0.20.11",
     "mocha": "^7.1.0",
     "nodemon": "^2.0.2"
   }
