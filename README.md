@@ -37,7 +37,7 @@ Before you do the testing process, make sure to run the server and the migration
 
 ```sh
 
-yarn init
+yarn run init
 
 ```
 
@@ -51,4 +51,10 @@ then run the testing command
 
 ```sh
 yarn run test
+```
+
+or using all-in-one command
+
+```sh
+yarn run ci
 ```
