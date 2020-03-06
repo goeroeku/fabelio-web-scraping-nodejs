@@ -6,7 +6,7 @@ const cors = require("cors");
 
 const config = require("knexfile").server;
 
-const { printIp, handleAsyncExceptions } = require("app/util");
+const { handleAsyncExceptions } = require("app/util");
 const routes = require("app/routes");
 
 function run() {
@@ -41,8 +41,7 @@ function run() {
       app.use(routes);
 
       app.listen(config.port, config.host, () => {
-        console.log(`app running on http://${config.host}:${config.port}`);
-        printIp();
+        console.log(`App running on http://${config.host}:${config.port}`);
       });
       break;
   }
