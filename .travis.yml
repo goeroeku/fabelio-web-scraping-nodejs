@@ -1,0 +1,26 @@
+anguage: node_js
+node_js:
+  - v12.13.0
+script:
+  - "yarn run test"
+  - "yarn run init"
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: $HEROKU_API_KEY
+  app: $HEROKU_APP_NAME
+  on:
+    repo: goeroeku/fabelio-web-scraping-nodejs
+
+# blocklist
+branches:
+  except:
+  - legacy
+  - experimental
+
+# safelist
+branches:
+  only:
+  - master
+  - stable
