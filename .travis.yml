@@ -2,9 +2,10 @@ anguage: node_js
 node_js:
   - v12.13.0
 script:
-  - "yarn run start"
-  - "yarn run reinit"
-  - "yarn run test"
+  # - "yarn run start"
+  # - "yarn run reinit"
+  # - "yarn run test"
+  - "yarn run ci"
 
 deploy:
   provider: heroku

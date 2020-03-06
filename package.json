@@ -7,10 +7,11 @@
   "license": "MIT",
   "scripts": {
     "start": "NODE_PATH=. node_modules/.bin/babel-node --  ./app/server.js",
-    "test": "NODE_PATH=. mocha ./test/**/*.js --require babel-core/register --require babel-polyfill --silent",
+    "test": "yarn run init && yarn reinit && NODE_PATH=. mocha ./test/**/*.js --require babel-core/register --require babel-polyfill --silent",
     "server": "NODE_PATH=. nodemon --exec \"babel-node\" ./app/server.js",
     "init": "NODE_PATH=. knex migrate:latest &&  knex seed:run",
-    "reinit": "NODE_PATH=. knex migrate:down && knex migrate:up && knex seed:run"
+    "reinit": "NODE_PATH=. knex migrate:down && knex migrate:up && knex seed:run",
+    "ci": "start-server-and-test http://localhost:3000"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -45,6 +46,7 @@
     "kill-port": "^1.6.0",
     "knex": "^0.20.11",
     "mocha": "^7.1.0",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "start-server-and-test": "^1.10.8"
   }
 }
