@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "NODE_PATH=. node_modules/.bin/babel-node --  ./app/server.js",
-    "test": "yarn run init && yarn reinit && NODE_PATH=. mocha ./test/**/*.js --require babel-core/register --require babel-polyfill --silent",
+    "test": "NODE_PATH=. mocha ./test/**/*.js --require babel-core/register --require babel-polyfill --silent",
     "server": "NODE_PATH=. nodemon --exec \"babel-node\" ./app/server.js",
     "init": "NODE_PATH=. knex migrate:latest &&  knex seed:run",
     "reinit": "NODE_PATH=. knex migrate:down && knex migrate:up && knex seed:run",
